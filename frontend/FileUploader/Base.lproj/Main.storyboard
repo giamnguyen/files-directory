@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hUW-2m-fG8">
-                                <rect key="frame" x="0.0" y="96" width="414" height="191"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-Rl-c1L">
                                 <rect key="frame" x="183" y="357" width="50" height="30"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,45 +31,20 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Multiple Files"/>
                                 <connections>
-                                    <action selector="onMultipleFilesTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nb-we-aBN"/>
+                                    <action selector="onMultipleFilesButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbY-0s-c7E"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sR2-5I-4XF">
-                                <rect key="frame" x="132" y="487" width="150" height="2"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="ERa-Bt-lk8"/>
-                                </constraints>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiL-TQ-x9S">
-                                <rect key="frame" x="194" y="508" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sR2-5I-4XF" secondAttribute="bottom" constant="373" id="HL7-pF-CAX"/>
-                            <constraint firstItem="hUW-2m-fG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mzf-zg-YGj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9xX-Rl-c1L" secondAttribute="trailing" constant="181" id="PRI-kR-QxM"/>
-                            <constraint firstItem="9xX-Rl-c1L" firstAttribute="top" secondItem="hUW-2m-fG8" secondAttribute="bottom" constant="70" id="Pgt-JB-6oO"/>
-                            <constraint firstItem="iOO-u8-Vqq" firstAttribute="top" secondItem="9xX-Rl-c1L" secondAttribute="bottom" constant="27" id="TZB-HZ-Av1"/>
-                            <constraint firstItem="hUW-2m-fG8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Zmd-LT-JXo"/>
-                            <constraint firstItem="iOO-u8-Vqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="asP-1T-LRY"/>
-                            <constraint firstItem="hUW-2m-fG8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6X-Fn-SyY"/>
-                            <constraint firstItem="hUW-2m-fG8" firstAttribute="centerX" secondItem="sR2-5I-4XF" secondAttribute="centerX" id="nTY-i8-cfN"/>
-                            <constraint firstItem="9xX-Rl-c1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="ntk-ZI-ZvH"/>
-                            <constraint firstItem="sR2-5I-4XF" firstAttribute="top" secondItem="iOO-u8-Vqq" secondAttribute="bottom" constant="43" id="oXw-L7-KLw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9xX-Rl-c1L" secondAttribute="trailing" constant="181" id="7pM-aC-DDV"/>
+                            <constraint firstItem="9xX-Rl-c1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="XwF-3X-C0R"/>
+                            <constraint firstItem="9xX-Rl-c1L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="313" id="eE1-Be-Lca"/>
+                            <constraint firstItem="iOO-u8-Vqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="uts-tu-FTA"/>
+                            <constraint firstItem="iOO-u8-Vqq" firstAttribute="top" secondItem="9xX-Rl-c1L" secondAttribute="bottom" constant="27" id="xam-wF-wg5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="myFileView" destination="hUW-2m-fG8" id="5b5-Ew-mBM"/>
-                        <outlet property="progressLabel" destination="EiL-TQ-x9S" id="zaL-uW-maz"/>
-                        <outlet property="progressView" destination="sR2-5I-4XF" id="9i7-5J-Geq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

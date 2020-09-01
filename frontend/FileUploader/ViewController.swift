@@ -5,14 +5,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, URLSessionDelegate, URLSessionTaskDelegate, URLSessionDataDelegate {
+class ViewController: UIViewController {
 
     let rest = RestManager()
-    @IBOutlet weak var myFileView: UIImageView!
+    
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var multipleFilesButton: UIButton!
-    @IBOutlet weak var progressView: UIProgressView!
-    @IBOutlet weak var progressLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +21,9 @@ class ViewController: UIViewController, URLSessionDelegate, URLSessionTaskDelega
     }
     @IBAction func onUploadButtonTapped() {
         uploadSingleFile()
+    }
+    @IBAction func onMultipleFilesButtonTapped() {
+        uploadMultipleFiles()
     }
     
     func uploadSingleFile() {
