@@ -27,7 +27,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 		// Create a temporary file within "uploaded-dir" directory that follows
 		// a particular naming pattern
-		tempFile, err := ioutil.TempFile("uploads", fh.Filename)
+		tempFile, err := ioutil.TempFile("uploaded-dir", "*-"+fh.Filename)
 		if err != nil {
 			fmt.Println(err)
 		}
