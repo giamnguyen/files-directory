@@ -5,19 +5,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, URLSessionDelegate, URLSessionTaskDelegate, URLSessionDataDelegate {
 
     let rest = RestManager()
+    @IBOutlet weak var myFileView: UIImageView!
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var multipleFilesButton: UIButton!
+    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var progressLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //uploadSingleFile()
-        uploadMultipleFiles()
+//        uploadSingleFile()
+//        uploadMultipleFiles()
     }
-
-
+    @IBAction func onUploadButtonTapped() {
+        uploadSingleFile()
+    }
+    
     func uploadSingleFile() {
         let fileURL = Bundle.main.url(forResource: "sampleText", withExtension: "txt")
         let fileInfo = RestManager.FileInfo(withFileURL: fileURL, filename: "sampleText.txt", name: "myFile", mimetype: "text/plain")
