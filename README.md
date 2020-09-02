@@ -9,3 +9,7 @@ This app has basic function for upload files to server and download files from s
     * those files will be upload to `uploaded-dir` folder.
 
 ## Frontend:
+1. Run the app in the simulator of Xcode (Note: iOS simulators of Iphone 11 ProMax work best).
+2. Click "Upload" button to upload file to `uploaded-dir` folder.
+3. Click "Multiple Files" button to upload file to `uploaded-dir` folder.
+
